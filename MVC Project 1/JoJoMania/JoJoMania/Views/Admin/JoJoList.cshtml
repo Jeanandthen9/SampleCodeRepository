@@ -1,0 +1,36 @@
+﻿@model IEnumerable<JoJoMania.Models.JoJo>
+@{
+    ViewBag.Title = "JoJoList";
+}
+<div class="row">
+    <div class="col-xs-12 col-sm-9">
+        <div class="col-xs-12">
+            <h2>JoJo List</h2>
+            <p>@Html.ActionLink("Add A New Series", "Surprise", "Home", null, new { @class = "btn btn-primary" })</p>
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Part Number</th>
+                        <th>Part Name</th>
+                        <th>Main JoJo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var jojo in Model)
+            {
+                        <tr>
+                            <td>@jojo.PartDebut.PartNumber</td>
+                            <td>@jojo.PartDebut.PartName</td>
+                            <td>@jojo.FirstName @jojo.LastName</td>
+                            <td>
+                                @Html.ActionLink("Edit", "Surprise", "Home", null, new { @class = "btn btn-primary btn-sm", id = jojo.ID })
+                                @Html.ActionLink("Delete", "Surprise", "Home", null, new { @class = "btn btn-primary btn-sm", id = jojo.ID })
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

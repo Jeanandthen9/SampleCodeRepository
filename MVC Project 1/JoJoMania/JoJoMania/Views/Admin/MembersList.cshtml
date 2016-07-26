@@ -1,0 +1,40 @@
+﻿@model IEnumerable<JoJoMania.Models.Member>
+@{
+    ViewBag.Title = "MembersList";
+}
+
+<div class="row">
+    <div class="col-xs-12 col-sm-9">
+        <div class="col-xs-12">
+            <h2>Members List</h2>
+            <p>@Html.ActionLink("Add A Member", "AddMember", "Admin", null, new { @class = "btn btn-primary" })</p>
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>UserName</th>
+                        <th>Age</th>
+                        <th>Favorite JoJo</th>
+                        <th>Favorite Part</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var member in Model)
+            {
+                        <tr>
+                            <td><b>@member.UserID</b></td>
+                            <td>@member.UserName</td>
+                            <td>@member.Age</td>
+                            <td>@member.FavJoJo.FullName</td>
+                            <td><i>@member.FavPart.PartName</i></td>
+                            <td>
+                                @Html.ActionLink("Edit", "EditMember", "Admin", new { id = member.UserID}, new { @class = "btn btn-primary btn-sm" })
+                                @Html.ActionLink("Delete", "DeleteMember", "Admin",new { id = member.UserID}, new { @class = "btn btn-primary btn-sm" })
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

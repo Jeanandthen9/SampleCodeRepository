@@ -1,0 +1,22 @@
+﻿@model JoJoMania.Models.MemberVM
+@{
+    ViewBag.Title = "DeleteMember";
+}
+
+<div class="row">
+    <h2>Delete Member</h2>
+    <p></p>
+    @Html.ActionLink("Return to Member List", "MembersList", "Admin", null, new {@class = "btn btn-primary btn-sm"})
+<p></p>
+</div>
+
+<div class="row">
+    @using (Html.BeginForm())
+    {
+        @Html.HiddenFor(m => m.Member.UserID)
+        <p>Are you ABSOLUTELY sure you want to delete ALL member information for <b>@Html.DisplayFor(m => m.Member.UserName)</b>?
+        </p>
+        <button type="submit" class="btn btn-sm btn-danger">DELETE</button>
+        @Html.ActionLink("CANCEL", "MembersList", "Admin", null, new {@class = "btn btn-sm btn-info"})
+    }
+</div>

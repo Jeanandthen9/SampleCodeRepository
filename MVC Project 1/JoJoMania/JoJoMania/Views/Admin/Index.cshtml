@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div class="row">
+    <p>Welcome, Admin! This page is where you can customize member data, as well as adding or editing information regarding the JoJo series!</p>
+
+    <p></p>
+
+    <p>Please select what you would like to make customizations to:</p>
+
+    @Html.ActionLink("Members", "MembersList", "Admin", null, new {@class = "btn btn-primary btn-lg"})  @Html.ActionLink("JoJo Series", "JoJoList", "Admin", null, new { @class = "btn btn-primary btn-lg" })
+
+    
+
+    @*<button type="button" class="btn btn-default btn-lg" href="">Members</button> <button type="button" class="btn btn-default btn-lg" href="">JoJo Series</button>*@
+
+</div>

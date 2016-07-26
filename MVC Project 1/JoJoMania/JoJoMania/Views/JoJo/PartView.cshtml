@@ -1,0 +1,27 @@
+﻿@using JoJoMania.Models
+@model JoJoMania.Models.Data.PartVM
+@{
+    ViewBag.Title = "PartView";
+}
+<center>
+    <h2>Part @Model.Part.PartNumber: <i> @Model.Part.PartName</i></h2>
+</center>
+@Html.Image(@Model.JoJo.ImageURL.ToString(), "alt", "500", "left", "50")
+<h3 style="text-align: left"><u><b>THE JOJO</b></u></h3>
+<ul style="list-style-type: square; list-style-position: inside; text-align: left">
+    <li><b>MAIN JOJO:</b> @Model.JoJo.FullName</li>
+    <li><b>AGE:</b> @Model.JoJo.Age</li>
+</ul>
+<button class="btn btn-default btn-lg" style="align-content: center" id="moreInfo">SHOW MORE INFO</button>
+<div id="storyInfo">
+    <h3 style="text-align: left">
+        <u><b>THE STORY</b></u>
+    </h3>
+    <p style="text-align: left; text-indent: 50px">@Model.JoJo.Story</p>
+    <button class="btn btn-default btn-lg" style="align-content: center" id="lessInfo">HIDE INFO</button>
+</div>
+
+@section scripts
+{
+    <script src="~/scripts/myScripts/ShowHideJoJoInfo.js"></script>
+}
