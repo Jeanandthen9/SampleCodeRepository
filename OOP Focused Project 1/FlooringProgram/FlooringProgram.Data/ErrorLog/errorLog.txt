@@ -1,0 +1,70 @@
+**********************************
+*****7/5/2016 1:27:03 PM**********
+**********************************
+
+User entered a PRODUCT TYPE of OOZE - Does not exist in database.
+
+
+**********************************
+*****7/5/2016 1:27:03 PM**********
+**********************************
+
+User entered a STATE NAME of PANIMA - Does not exist in database.
+
+
+**********************************
+*****7/5/2016 1:27:03 PM**********
+**********************************
+
+The user received the following error(s):
+OOZE does not exist within the database as a valid product!
+PANIMA does not exist within the database as a valid state!
+The new order WAS NOT created.
+
+Press ANY KEY to return to the main menu!
+
+New order was not placed.
+
+
+**********************************
+*****7/5/2016 2:36:38 PM**********
+**********************************
+User attempted to CREATE a NEW ORDER. User entered a PRODUCT TYPE of FOAM - Does not exist in database.
+**********************************
+*****7/5/2016 2:36:38 PM**********
+**********************************
+User attempted to CREATE a NEW ORDER. User entered a STATE NAME of MISSISSIPPI - Does not exist in database.
+**********************************
+*****7/5/2016 2:36:38 PM**********
+**********************************
+The user received the following error(s): FOAM does not exist within the database as a valid product!
+
+MISSISSIPPI does not exist within the database as a valid state!
+The new order WAS NOT created.
+**********************************
+*****7/6/2016 9:24:28 AM**********
+**********************************
+User attempted to CREATE a NEW ORDER. User entered a PRODUCT TYPE of FOAM - Does not exist in database.
+**********************************
+*****7/6/2016 9:24:28 AM**********
+**********************************
+User attempted to CREATE a NEW ORDER. User entered a STATE NAME of WASHINGTON - Does not exist in database.
+**********************************
+*****7/6/2016 9:24:28 AM**********
+**********************************
+The user received the following error(s): FOAM does not exist within the database as a valid product!
+
+WASHINGTON does not exist within the database as a valid state!
+The new order WAS NOT created.
+**********************************
+*****7/6/2016 9:36:17 AM**********
+**********************************
+User attempted to SEARCH for order using a DATE of 07/05/2016 and an ORDER NUMBER of 4. Order could not be found.
+**********************************
+*****7/6/2016 9:36:29 AM**********
+**********************************
+User attempted to SEARCH for order using a DATE of 07/05/2016 and an ORDER NUMBER of 4. Order could not be found.
+**********************************
+*****7/6/2016 9:36:38 AM**********
+**********************************
+User attempted to SEARCH for order using a DATE of 07/05/2016 and an ORDER NUMBER of 4. Order could not be found.
